@@ -9,7 +9,10 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.Map;
 import java.util.HashMap;
-
+/*
+* Урок 1
+* Сервлет принимает любой запрос и возвращает страницу с передаваемым парметром
+* */
 public class Frontend extends HttpServlet {
 
     private String login = "";
