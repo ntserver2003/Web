@@ -1,5 +1,6 @@
 package accounts;
 
+import accounts.*;
 import java.util.HashMap;
 import java.util.Map;
 /**
@@ -22,7 +23,33 @@ public class AccountService {
      * Добавление профиля
      */
     public void addProfile(UserProfile userProfile){
+
         loginToProfile.put(userProfile.getLogin(),userProfile);
+
+    }
+    /**
+     * Получение профиля
+     */
+    public UserProfile getProfile(String login){
+        return loginToProfile.get(login);
+    }
+    /**
+     * Добавление сессии
+     */
+    public void addSession(String sessionId ,UserProfile userProfile){
+        sessionToProfile.put(sessionId,userProfile);
+    }
+    /**
+     * Получение сессии профиля
+     */
+    public UserProfile getProfileBySession(String sessionID){
+        return sessionToProfile.get(sessionID);
+    }
+    /**
+     * Удаление сессии
+     */
+    public void deleteProfile(String sessionID){
+        sessionToProfile.remove(sessionID);
     }
 
 }

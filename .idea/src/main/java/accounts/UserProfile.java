@@ -1,8 +1,9 @@
 package accounts;
 
+import accounts.*;
 public class UserProfile {
-    private final String login;
-    private final String password;
+    private  String login;
+    private  String password;
 
     public UserProfile(String login,String password){
         this.login = login;
@@ -10,6 +11,9 @@ public class UserProfile {
     }
     public String getLogin(){
         return login;
+    }
+    public String getPassword(){
+        return password;
     }
 
 }
