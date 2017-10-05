@@ -1,6 +1,5 @@
 package accounts;
 
-import accounts.*;
 import java.util.HashMap;
 import java.util.Map;
 /**
@@ -22,7 +21,7 @@ public class AccountService {
     /**
      * Добавление профиля
      */
-    public void addProfile(UserProfile userProfile){
+    public void addProfile(accounts.UserProfile userProfile){
 
         loginToProfile.put(userProfile.getLogin(),userProfile);
 

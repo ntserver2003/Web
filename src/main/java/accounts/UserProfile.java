@@ -1,6 +1,5 @@
 package accounts;
 
-import accounts.*;
 public class UserProfile {
     private  String login;
     private  String password;
